@@ -26,6 +26,7 @@ const InvestmentForm = (props) => {
   const submitHandler = (event) => {
     event.preventDefault();
 
+    props.onCalculate(userInput);
   };
   const resetHandler = () => {
     setUserInput(initialUserInput);
